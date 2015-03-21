@@ -27,9 +27,11 @@ h2 {
 }
 
 #logo {
-   width:7em;
-   height:auto;
-   padding:1rem 0;
+   width:100px;
+   height:45px;
+   margin:1rem 0;
+   padding:0;
+   background-image:url('../img/logo-flat-light.png');
 }
 
 #content {
@@ -80,4 +82,16 @@ exb {
    #content {
       padding: 2em 0;
    }
+   #logo {
+      background-size:
+   }
+}
+
+/*Thanks to http://ivomynttinen.com/blog/a-guide-for-creating-a-better-retina-web/*/
+/*CSS for serving the retina image to devices with a high "device-pixel-ratio":*/
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+  #logo {
+      background-image:url('../img/logo-flat-light@2x.png');
+      background-size: 100px 45px;
+  }
 }
